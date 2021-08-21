@@ -101,7 +101,7 @@ public class sqlExam {
 		    finally {System.out.println("Insert Completed");}
 		    	
 			
-		    }//end if for campus choice
+		    }
 	    	else if (choice.equals("faculty")) {
 	    		
 	    		Scanner inputsForFaculty = new Scanner(System.in);
@@ -125,7 +125,7 @@ public class sqlExam {
 		    		}
 		    finally {System.out.println("Insert Completed");}
 	    		
-	    	}//end of faculty choice
+	    	}
 	    	else if (choice.equals("department")) {
 	    		Scanner inputForDepartment = new Scanner(System.in);
 	    		
@@ -151,7 +151,7 @@ public class sqlExam {
 		    		}
 		    finally {System.out.println("Insert Completed");}
 	    		
-	    	}//end of department choice
+	    	}
 	    	else if(choice.equals("curriculum")) {
 	    		Scanner inputForCurriculum = new Scanner(System.in);
 	    		
@@ -182,7 +182,7 @@ public class sqlExam {
 	    		
 
 
-	    	}//end of choice curriculum
+	    	}
 	    	else if (choice.equals("teacher")) {
 	    		Scanner inputForTeacher = new Scanner(System.in);
 	    		
@@ -217,7 +217,7 @@ public class sqlExam {
 		    		}
 		    finally {System.out.println("Insert Completed");}
 	    		
-	    	}//end of choice teacher
+	    	}
 	    	else if (choice.equals("supervisor")) {
 	    		Scanner inputForSupervisor = new Scanner(System.in);
 	    		
@@ -234,7 +234,7 @@ public class sqlExam {
 		    		}
 		    finally {System.out.println("Insert Completed");}
 	    		
-	    	}//end of choice supervisor
+	    	}
 	    	else if (choice.equals("student")) {
 	    		Scanner inputForStudent = new Scanner(System.in);
 	    		
@@ -270,7 +270,7 @@ public class sqlExam {
 		    finally {System.out.println("Insert Completed");}
 	    		
 	    		
-	    	}//end of choice student
+	    	}
 	    	else if(choice.equals("course")) {
 	    		
 	    		Scanner inputForcourse = new Scanner(System.in);
@@ -302,7 +302,7 @@ public class sqlExam {
 	    			
 	    		
 	    		
-	    	}//end of choice course
+	    	}
 	    	else if(choice.equals("commission")) {
 	    		
 	    		Scanner inputForCommission = new Scanner(System.in);
@@ -345,7 +345,7 @@ public class sqlExam {
 			    		System.out.println(e);
 			    		}
 			    finally {System.out.println("Insert Completed");}
-	    	}//endd
+	    	}
 	    	
 	    	else if (choice.equals("student_course")) {	    			    			    			    			
 	    			Scanner InputStudentCourse = new Scanner(System.in);
@@ -378,7 +378,7 @@ public class sqlExam {
 	    	
 	        
 	        
-	}//end post
+	}
 	    public static void select_courses() throws Exception{
 	    	try {
 	    		Connection con = getConnection(); //connection to database	    		  	    	
@@ -414,7 +414,7 @@ public class sqlExam {
 	    	catch(Exception e) {
 	    		System.out.println(e);
 	    		}	    		    							 	
-	    }//end select_courses
+	    }
 	    
 	    public static void select_teacher() throws Exception{ 		
 	    	
@@ -434,7 +434,7 @@ public class sqlExam {
 	    	catch(Exception e) {
 	    		System.out.println(e);
 	    		}
-	    }//end select_teacher
+	    }
 	    
 	    
 	    public static void select_supervisor() throws Exception{
@@ -513,7 +513,7 @@ public class sqlExam {
 	    	
 	    	
 	    	
-	    }//
+	    }
 	    
 	    public static void over_Due(String curriculum) throws Exception{
 	    	try {
